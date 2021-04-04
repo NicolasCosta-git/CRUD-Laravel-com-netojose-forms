@@ -80,7 +80,7 @@ class MoviesController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-            'title' => 'required|unique:movies,title',
+            'title' => 'required',
             'year' => 'required',
             'synopsis' => 'required'
         ]);
